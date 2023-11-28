@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function FooterUI() {
   return (
-    <div className="font-work font-light text-lg text-ctz-gray-light leading-7 w-full  xl:h-[347px] flex flex-col xl:flex-row justify-between items-center bg-ctz-gray-semi_dark p-10">
+    <div className="font-work font-light text-lg text-ctz-gray-light leading-7 w-full  xl:h-[347px] flex flex-col xl:flex-row justify-between items-center bg-ctz-gray-semi_dark py-10">
       <div className="w-full xl:w-[730px] flex flex-col items-center pb-10 xl:pb-0 mr-0 2xl:mr-[220px]">
         <p className="font-monument text-ctz-yellow-light text-[33px] leading-[80%]">
           THE HUB <br />CITIZENS
