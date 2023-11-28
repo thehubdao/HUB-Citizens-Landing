@@ -14,9 +14,9 @@ export default function Home() {
       <HomeUI/>
       <AvatarCarrouselUI />
       <ExploreNowUI />
-      {/* <CreationModeUI /> */}
-      {/* <VrmUI />
-      <InAppUI /> */}
+      <CreationModeUI />
+      <VrmUI />
+      <InAppUI />
     </main>
     <FooterUI/>
   </>
