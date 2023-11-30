@@ -11,7 +11,8 @@ const config: Config = {
     extend: {
       fontFamily: {
         'work': ['var(--work-font)', 'sans-serif'],
-        'monument': ['var(--monument-font)', 'sans-serif']
+        'monument': ['var(--monument-font)', 'sans-serif'],
+        'toogle': ['var(--toogle-font)', 'sans-serif'],
       },
       colors: {
         ctz:{
