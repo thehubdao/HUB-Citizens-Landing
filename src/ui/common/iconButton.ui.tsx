@@ -11,9 +11,10 @@ interface ArrowButtonUIProps {
   iconColor?: string;
   iconSize?: ButtonIconSize;
   iconsList?: { icon: ButtonIcon, url: string }[];
+  isFullWidth?: boolean; 
 }
 
-export default function IconButtonUI({ icon, iconColor, iconSize, iconLink, children, borderColor, iconsList }: ArrowButtonUIProps) {
+export default function IconButtonUI({ icon, iconColor, iconSize, iconLink, children, borderColor, iconsList, isFullWidth }: ArrowButtonUIProps) {
 
   function getBorderColor(color: ButtonBorderColor | undefined): string {
     switch (color) {
@@ -85,15 +86,15 @@ export default function IconButtonUI({ icon, iconColor, iconSize, iconLink, chil
   }
 
   return (
-    <div className='flex'>
-      <Link href={iconLink ?? '#'} className={`flex ${icon !== undefined ? 'cursor-pointer' : 'cursor-auto'}`} >
+    <div className={`flex ${isFullWidth ? 'w-full' : ''}`}>
+      <Link href={iconLink ?? '#'} className={`flex ${icon !== undefined ? 'cursor-pointer' : 'cursor-auto'} ${isFullWidth ? 'w-full' : ''}`} >
         {
           icon !== undefined &&
           <div className={`border-2 border-r-0 ${getBorderColor(borderColor)}`}>
             {getIcon(icon)}
           </div>
         }
-        <div className={`flex items-center border-2 ${getBorderColor(borderColor)}`}>
+        <div className={`flex items-center border-2 ${getBorderColor(borderColor)} ${isFullWidth ? 'w-full' : ''}`}>
           {children}
         </div>
       </Link>
