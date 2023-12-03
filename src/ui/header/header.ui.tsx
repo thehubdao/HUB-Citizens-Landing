@@ -12,17 +12,39 @@ const menuOptions = [
   { label: Menu.Explore, link: PageLocation.Explore }
 ];
 
-export default function HeaderUI() {
+interface HeaderUIProps {
+  backgroundColor: 'yellow' | 'gray'
+}
+
+export default function HeaderUI({ backgroundColor }: HeaderUIProps) {
   const [isNavOpen, setIsNavOpen] = useState<Boolean>(false);
   const handleToggleClick = () => {
     setIsNavOpen((prev) => !prev);
   };
 
+  const getBackgroundColor = () => {
+    switch (backgroundColor) {
+      case "yellow":
+        return "bg-ctz-yellow-medium"
+      case "gray":
+        return "bg-ctz-gray-aaultra_light"
+    }
+  }
+
+  const getTitleColor = () => {
+    switch (backgroundColor) {
+      case "yellow":
+        return "text-ctz-orange-semi_dark"
+      case "gray":
+        return "text-ctz-light"
+    }
+  }
+
   return (
-    <header className="flex w-full sm:h-[73px] border-y-[2px] border-ctz-light bg-ctz-yellow-medium fixed z-10">
+    <header className={`flex w-full sm:h-[73px] border-y-[2px] border-ctz-light ${getBackgroundColor()} fixed z-10`}>
       <nav className="hidden md:flex flex-col sm:flex-row justify-between w-full">
         <Link href={PageLocation.Home} className={`cursor-pointer w-[227px] flex items-center justify-center my-4 sm:my-0 sm:border-r-[2px] border-ctz-light`}>
-          <p className={`text-xl text-ctz-orange-semi_dark leading-[100%] uppercase pr-2 text-center`}>The hub <br />citizens</p>
+          <p className={`text-xl ${getTitleColor()} leading-[100%] uppercase pr-2 text-center`}>The hub <br />citizens</p>
         </Link>
         {menuOptions.map((option, index) => (
           <NavbarUI key={index} label={option.label} link={option.link} hasBorder={index < menuOptions.length - 1} />
@@ -30,7 +52,7 @@ export default function HeaderUI() {
       </nav>
       <nav className="flex md:hidden justify-between w-full">
         <Link href={PageLocation.Home} className={`cursor-pointer w-[227px] flex items-center justify-center my-4 sm:my-0  border-ctz-light`}>
-          <p className={`text-xl text-ctz-orange-semi_dark leading-[100%] uppercase pr-2 text-center`}>The hub <br />citizens</p>
+          <p className={`text-xl ${getTitleColor()} leading-[100%] uppercase pr-2 text-center`}>The hub <br />citizens</p>
         </Link>
         <div className={`font-toogle text-3xl pr-4 cursor-pointer flex items-center ${isNavOpen ? 'hidden' : ''}`} onClick={() => handleToggleClick()}>
           b
