@@ -29,7 +29,8 @@ const config: Config = {
             semi_dark: '#FA743D',
             dark: '#F96049'
           },
-          gray:{
+          gray: {
+            aaultra_light: '#F1F1F1',
             aultra_light: '#F3F3F3',
             light: '#ECEFF4',
             medium: '#BABCC9',
@@ -42,6 +43,9 @@ const config: Config = {
           }
         }
       },
+      screens: {
+        '3xl': '1920px'
+      }
     },
   },
   plugins: [],
