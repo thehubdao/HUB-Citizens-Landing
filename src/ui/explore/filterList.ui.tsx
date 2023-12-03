@@ -3,7 +3,7 @@ import FilterButtonUI from "./filterButton.ui"
 
 export default function FilterListUI() {
   return (
-    <div className="fixed bottom-0 left-0 lg:relative flex justify-between w-full 3xl:w-fit gap-1 md:gap-9 bg-ctz-gray-aaultra_light">
+    <div className="fixed bottom-0 left-0 lg:relative flex justify-between w-full 3xl:w-fit gap-1 md:gap-9 bg-ctz-gray-aaultra_light z-20">
       <FilterButtonUI
         label={CampaignType.avatar}
       />
