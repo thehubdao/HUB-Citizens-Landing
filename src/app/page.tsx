@@ -9,7 +9,7 @@ import VrmUI from "@/ui/vrm/vrm.ui";
 
 export default function Home() {
   return <>
-    <HeaderUI/>
+    <HeaderUI backgroundColor="yellow" />
     <main>
       <HomeUI/>
       <AvatarCarrouselUI />
