@@ -17,5 +17,5 @@ export enum PageLocation {
   Home ='/',
   Resources = '#',
   Create = '#',
-  Explore = '#'
+  Explore = '/explore'
 }
