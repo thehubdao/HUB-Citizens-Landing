@@ -1,3 +1,4 @@
+"use client"
 import AvatarCarrouselUI from "@/ui/avatarCarrousel/avatarCarrousel.ui";
 import CreationModeUI from "@/ui/creationMode/creationMode.ui";
 import ExploreNowUI from "@/ui/creationMode/exploreNow.ui";
@@ -10,7 +11,7 @@ import VrmUI from "@/ui/vrm/vrm.ui";
 export default function Home() {
   return <>
     <HeaderUI/>
-    <main>
+    <main className="w-full overflow-hidden">
       <HomeUI/>
       <AvatarCarrouselUI />
       <ExploreNowUI />
