@@ -2,14 +2,35 @@ import IconButtonUI from "../common/iconButton.ui";
 import ColorsBarUI from "../common/colorsBar.ui";
 import Image from 'next/image';
 import { ButtonBorderColor, ButtonIcon } from "@/enum/ui.enum";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
 export default function VrmUI() {
+  const avatar = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    gsap.to(avatar.current, {
+      xPercent: 30,
+      yPercent: -10,
+      ease: "none",
+      scrollTrigger: {
+        trigger: avatar.current,
+        start: "top bottom",
+        end: "bottom top",
+        scrub: true
+      }
+    })
+  }, []);
   return (
     <>
       <ColorsBarUI />
-      <div className="bg-ctz-yellow-medium flex flex-col lg:flex-row ctz-padding">
-        <div className='w-full lg:w-[35%] h-full relative'>
-          <Image src={'/images/avatar2.png'} alt='Avatar images' fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
+      <div className="bg-ctz-yellow-medium flex flex-col lg:flex-row lg:items-center ctz-padding">
+        <div className='w-full lg:w-[35%] h-[300px] absolute hidden lg:block'>
+          <Image src={'/images/bg-environment.png'} alt='Avatar images' fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" style={{ objectFit: "contain" }} />
+        </div>
+        <div ref={avatar} className='w-full lg:w-[35%] h-[900px] absolute hidden lg:block translate-x-1/4'>
+          <Image src={'/images/bg-avatar.png'} alt='Avatar images' fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" style={{ objectFit: "contain" }} />
         </div>
         <div className="w-full flex flex-col justify-between items-center lg:items-end pb-10 lg:pb-20">
           <div className="text-center lg:text-end pt-20 lg:pt-40">
