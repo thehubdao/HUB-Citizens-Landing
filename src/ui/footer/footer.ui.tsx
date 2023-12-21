@@ -30,7 +30,7 @@ export default function FooterUI() {
         <p className='text-center xl:text-start pl-0 lg:pl-[54px] mr- lg:mr-28 2xl:mr-[280px]'>
           Sed ut perspiciatis unde omnis <br className="hidden lg:inline-block" />iste natus error sit voluptatem <br className="hidden lg:inline-block" />accusantium doloremque <br className="hidden lg:inline-block" />laudantium, totam rem aperiam, <br className="hidden lg:inline-block" />eaque ipsa quae ab illo inventore <br className="hidden lg:inline-block" />veritatis.
         </p>
-        <div className='flex flex-col justify-center items-center pr-0 lg:pr-14 2xl:pr-[110px]'>
+        <div className='flex flex-col justify-center items-center pr-0 xl:pr-14 2xl:pr-[110px]'>
           <p className='uppercase text-[17px] leading-5 -tracking-[0.672px]'>Contact us at</p>
           <Link href={ExternalLink.MailTo}>
             <p className='cursor-pointer hover:text-ctz-yellow-medium'>Citizens@thehubdao.xzy</p>

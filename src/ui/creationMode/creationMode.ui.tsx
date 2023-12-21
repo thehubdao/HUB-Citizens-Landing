@@ -11,7 +11,7 @@ export default function CreationModeUI() {
               <p className="text-ctz-pink-light text-[40px] leading-[80%] pt-20 lg:pt-40">002.</p>
               <h1 className="text-ctz-gray-dark text-[8vw] lg:text-[4.1vw] leading-[80%] py-4">CREATION MODE</h1>
               <h2 className="text-ctz-pink-light text-[40px] leading-[80%]">MAKE IT YOUR OWN!</h2>
-              <p className="font-work text-ctz-gray-semi_dark text-[4vw] lg:text-[1.3vw] tracking-[5px] leading-[100%] font-light py-10">Diversity at Your Fingertips: <br className="hidden lg:inline-block" />Whether you want to upload a <br className="hidden lg:inline-block" />single asset or a whole <br className="hidden lg:inline-block" />collection, our platform adapts to your creative flow</p>
+              <p className="font-work text-ctz-gray-semi_dark text-[3.5vw] lg:text-[1.3vw] tracking-[5px] leading-[100%] font-light py-10">Diversity at Your Fingertips: <br className="hidden lg:inline-block" />Whether you want to upload a <br className="hidden lg:inline-block" />single asset or a whole <br className="hidden lg:inline-block" />collection, our platform adapts to your creative flow</p>
             </div>
             <div className="p-4 lg:p-0 w-full flex lg:hidden justify-center">
               <IconButtonUI iconColor={'fill-ctz-yellow-medium'} icon={ButtonIcon.arrow}>
