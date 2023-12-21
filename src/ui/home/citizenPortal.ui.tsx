@@ -11,8 +11,8 @@ export default function CitizenPortalUI() {
           <p className="font-work text-ctz-gray-semi_dark text-[3.5vw] lg:text-[1.3vw] tracking-[5px] leading-[100%] font-light mt-[17px] text-center lg:text-start pb-16">Create unique interoperable  <br className="hidden lg:inline-block"/>game assets and unleash  <br className="hidden lg:inline-block"/>your creativity.</p>
         </div>
         <div className="w-full lg:w-1/2 flex justify-center items-center p-6 lg:p-12">
-          <div className="relative w-[756px] h-[345px]">
-            <Image src={'/images/avatar-img.png'} alt='The hub icon' fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
+          <div className="relative w-[756px] h-[345px] rounded-3xl overflow-hidden">
+            <Image src={'/images/avatar-img.png'} alt='The hub icon' fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" style={{objectFit: 'cover'}}/>
           </div>
         </div>
       </div>
