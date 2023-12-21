@@ -6,7 +6,7 @@ export enum CommonUrls {
 }
 
 export enum ExternalLink {
-  MailTo = 'mailto:Citizens@thehubdao.xzy',
+  MailTo = 'info@thehubstudios.xyz',
   Instagram = 'https://www.instagram.com/thehub_dao/',
   Twitter = 'https://twitter.com/thehub_dao',
   TheHubDAO = 'https://www.thehubdao.xyz/',

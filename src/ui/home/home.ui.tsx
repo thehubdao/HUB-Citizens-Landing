@@ -25,9 +25,18 @@ export default function HomeUI() {
   ]
 
   return (
-    <div className="bg-ctz-yellow-medium">
+    <div className="">
+      <div className="absolute inset-0 -z-10">
+        <iframe
+          id="inlineFrameExample"
+          title="Inline Frame Example"
+          width="100%"
+          height="200%"
+          src="https://avatar-generator-git-testing-dap-frontend.vercel.app/lukso_m?ov=true&bg=FFD801">
+        </iframe>
+      </div>
       {/* first section */}
-      <div className="pt-[73px] lg:min-h-screen flex flex-col justify-between pb-10">
+      <div className="pt-[73px] lg:min-h-screen flex flex-col justify-between pb-10 z-10">
         <div className="h-[73px] border-b-[2px] border-ctz-light flex justify-center items-center ctz-padding">
           <ColorsBarUI />
         </div>

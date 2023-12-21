@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Work_Sans } from 'next/font/google';
 import Monument_Font from 'next/font/local';
 import ToogleIcons from 'next/font/local';
@@ -11,6 +11,11 @@ const toogleIcons = ToogleIcons({src: '../../public/fonts/icomoon-toogle-x.ttf',
 export const metadata: Metadata = {
   title: 'The Hub Citizens',
   description: 'Weeb 3.0 Oriented avatar suite',
+}
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1
 }
 
 export default function RootLayout({
