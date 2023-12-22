@@ -7,6 +7,8 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { PageLocation } from "@/enum/urls.enum";
 
+gsap.registerPlugin(ScrollTrigger);
+
 export default function VrmUI() {
   const avatar = useRef<HTMLDivElement>(null);
 
