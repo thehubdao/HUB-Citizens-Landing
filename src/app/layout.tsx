@@ -9,8 +9,8 @@ const MonumentFont = Monument_Font({src: '../../public/fonts/MonumentExtended-Ul
 const toogleIcons = ToogleIcons({src: '../../public/fonts/icomoon-toogle-x.ttf', display: 'block',  variable: '--toogle-font'});
 
 export const metadata: Metadata = {
-  title: 'The Hub Citizens',
-  description: 'Weeb 3.0 Oriented avatar suite',
+  title: 'The Citizens Portal',
+  description: 'Web 3.0 Oriented avatar suite: Create unique interoperable game assets and unleash your creativity.',
 }
 
 export const viewport: Viewport = {
