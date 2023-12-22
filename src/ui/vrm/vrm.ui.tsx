@@ -5,6 +5,7 @@ import { ButtonBorderColor, ButtonIcon } from "@/enum/ui.enum";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import { PageLocation } from "@/enum/urls.enum";
 
 export default function VrmUI() {
   const avatar = useRef<HTMLDivElement>(null);
@@ -38,7 +39,7 @@ export default function VrmUI() {
             <h2 className="text-ctz-pink-light text-[6vw] lg:text-[2.87vw] leading-[80%] uppercase pt-5 lg:pt-0">Focus on Interoperability:</h2>
             <p className="font-work text-ctz-gray-semi_dark text-[3.5vw] lg:text-[1.3vw] tracking-[5px] leading-[100%] font-light py-10">Our VRM integration <br className="hidden lg:inline-block" />allows your creations to <br className="hidden lg:inline-block" />be compatible with over <br className="hidden lg:inline-block" />200 platforms.</p>
           </div>
-          <IconButtonUI iconColor={'fill-ctz-pink-medium'} icon={ButtonIcon.arrow} borderColor={ButtonBorderColor.White}>
+          <IconButtonUI iconColor={'fill-ctz-pink-medium'} icon={ButtonIcon.arrow} borderColor={ButtonBorderColor.White} iconLink={PageLocation.Resources}>
             <p className='text-[4vw] lg:text-[2vw] leading-[80%] uppercase text-ctz-light px-4 lg:px-12 text-center'>Learn more</p>
           </IconButtonUI>
         </div>

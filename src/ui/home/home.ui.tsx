@@ -25,14 +25,14 @@ export default function HomeUI() {
   ]
 
   return (
-    <div className="">
+    <div>
       <div className="absolute inset-0 -z-10">
         <iframe
           id="inlineFrameExample"
           title="Inline Frame Example"
           width="100%"
           height="200%"
-          src="https://avatar-generator-git-testing-dap-frontend.vercel.app/lukso_m?ov=true&bg=FFD801">
+          src="https://avatar-generator-git-dev-dap-frontend.vercel.app/CITIZENS?ov=true&bg=FFD801">
         </iframe>
       </div>
       {/* first section */}
@@ -41,11 +41,11 @@ export default function HomeUI() {
           <ColorsBarUI />
         </div>
         <div className="text-center ctz-padding pb-20 pt-10 lg:pt-0">
-          <h1 className="text-ctz-yellow-light text-[12vw] sm:text-[13vw] lg:text-[14vw] 2xl:text-[15vw] leading-[80%]">THE HUB <br />CITIZENS</h1>
+          <h1 className="text-ctz-yellow-light text-[12vw] sm:text-[13vw] lg:text-[14vw] 2xl:text-[15vw] leading-[60%] mix-blend-soft-light">CITIZENS<br /><span className="text-[8vw] sm:text-[9vw] lg:text-[10vw] 2xl:text-[11vw]">BY THE HUB</span></h1>
           <p className="text-ctz-pink-medium text-[3.5vw] sm:text-[5vw] lg:text-[2.8vw] 2xl:text-[3.4vw] leading-[80%] tracking-[7.2px]">WEB 3.0 ORIENTED AVATAR SUITE</p>
         </div>
         <div className='flex flex-col lg:flex-row justify-center items-center lg:justify-between ctz-padding'>
-          <IconButtonUI iconColor={'fill-ctz-gray-dark'} icon={ButtonIcon.play} iconSize={ButtonIconSize.small} borderColor={ButtonBorderColor.White}>
+          <IconButtonUI iconColor={'fill-ctz-gray-dark'} icon={ButtonIcon.play} iconSize={ButtonIconSize.small} borderColor={ButtonBorderColor.White} iconLink="https://www.instagram.com/p/C1H2eBxuHdq/">
             <p className='text-ctz-light text-lg leading-[80%] px-6 text-center'>WATCH TRAILER</p>
           </IconButtonUI>
           <div className='my-6 lg:my-0'>

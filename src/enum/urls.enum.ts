@@ -15,7 +15,7 @@ export enum ExternalLink {
 
 export enum PageLocation {
   Home ='/',
-  Resources = '#',
-  Create = '#',
-  Explore = '#'
+  Resources = 'soon',
+  Create = 'soon',
+  Explore = 'soon'
 }
