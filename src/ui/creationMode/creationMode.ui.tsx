@@ -1,3 +1,4 @@
+import { PageLocation } from "@/enum/urls.enum";
 import IconButtonUI from "../common/iconButton.ui";
 import { ButtonIcon } from "@/enum/ui.enum";
 
@@ -14,13 +15,13 @@ export default function CreationModeUI() {
               <p className="font-work text-ctz-gray-semi_dark text-[3.5vw] lg:text-[1.3vw] tracking-[5px] leading-[100%] font-light py-10">Diversity at Your Fingertips: <br className="hidden lg:inline-block" />Whether you want to upload a <br className="hidden lg:inline-block" />single asset or a whole <br className="hidden lg:inline-block" />collection, our platform adapts to your creative flow</p>
             </div>
             <div className="p-4 lg:p-0 w-full flex lg:hidden justify-center">
-              <IconButtonUI iconColor={'fill-ctz-yellow-medium'} icon={ButtonIcon.arrow}>
+              <IconButtonUI iconColor={'fill-ctz-yellow-medium'} icon={ButtonIcon.arrow} iconLink={PageLocation.Create}>
                 <p className='text-[4vw] lg:text-[2.3vw] leading-[80%] uppercase text-ctz-pink-light px-4 text-center'>Upload your<br />own creations</p>
               </IconButtonUI>
             </div>
           </div>
           <div className="p-4 lg:p-0 w-full hidden lg:flex">
-            <IconButtonUI iconColor={'fill-ctz-yellow-medium'} icon={ButtonIcon.arrow} isFullWidth={true}>
+            <IconButtonUI iconColor={'fill-ctz-yellow-medium'} icon={ButtonIcon.arrow} isFullWidth={true} iconLink={PageLocation.Create}>
               <p className='text-[4vw] lg:text-[2vw] leading-[80%] uppercase text-ctz-pink-light px-4 lg:px-9 text-center w-full'>Upload your<br />own creations</p>
             </IconButtonUI>
           </div>
