@@ -26,8 +26,10 @@ export default function CreationModeUI() {
             </IconButtonUI>
           </div>
         </div>
-        <div className="border-[2px] border-ctz-gray-dark border-l-0 w-full">
-
+        <div className="border-[2px] border-ctz-gray-dark border-l-0 w-full flex justify-center items-center">
+          <video width={"90%"} autoPlay muted loop>
+            <source src="/videos/design.mp4" type="video/mp4" />
+          </video>
         </div>
       </div>
     </div>
