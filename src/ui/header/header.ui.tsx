@@ -22,7 +22,7 @@ export default function HeaderUI() {
     <header className="flex w-full sm:h-[73px] border-y-[2px] border-ctz-light bg-ctz-yellow-medium fixed z-10">
       <nav className="hidden md:flex flex-col sm:flex-row justify-between w-full">
         <Link href={PageLocation.Home} className={`cursor-pointer w-[227px] flex items-center justify-center my-4 sm:my-0 sm:border-r-[2px] border-ctz-light`}>
-          <p className={`text-xl text-ctz-orange-semi_dark leading-[100%] uppercase pr-2 text-center`}>The hub <br />citizens</p>
+          <p className={`text-xl text-ctz-orange-semi_dark leading-[60%] uppercase pr-2 text-center`}>citizens <br /><span className="text-sm tracking-wide leading-[60%]">by the hub</span></p>
         </Link>
         {menuOptions.map((option, index) => (
           <NavbarUI key={index} label={option.label} link={option.link} hasBorder={index < menuOptions.length - 1} />
@@ -30,7 +30,7 @@ export default function HeaderUI() {
       </nav>
       <nav className="flex md:hidden justify-between w-full">
         <Link href={PageLocation.Home} className={`cursor-pointer w-[227px] flex items-center justify-center my-4 sm:my-0  border-ctz-light`}>
-          <p className={`text-xl text-ctz-orange-semi_dark leading-[100%] uppercase pr-2 text-center`}>The hub <br />citizens</p>
+          <p className={`text-xl text-ctz-orange-semi_dark leading-[60%] uppercase pr-2 text-center`}>citizens <br /><span className="text-sm tracking-wide leading-[60%]">by the hub</span></p>
         </Link>
         <div className={`font-toogle text-3xl pr-4 cursor-pointer flex items-center ${isNavOpen ? 'hidden' : ''}`} onClick={() => handleToggleClick()}>
           b
@@ -41,7 +41,7 @@ export default function HeaderUI() {
               x
             </div>
             <Link href={PageLocation.Home} className={`cursor-pointer flex items-center justify-center my-4 sm:my-0 fixed top-0 pt-10 border-ctz-light`} onClick={() => handleToggleClick()}>
-              <p className={`text-xl text-ctz-orange-semi_dark leading-[100%] uppercase pr-2 text-center`}>The hub <br />citizens</p>
+              <p className={`text-xl text-ctz-orange-semi_dark leading-[60%] uppercase pr-2 text-center`}>citizens <br /><span className="text-sm tracking-wide leading-[60%]">by the hub</span></p>
             </Link>
             {menuOptions.map((option, index) => (
               <NavbarUI key={index} label={option.label} link={option.link} closeMenu={() => handleToggleClick()} />
