@@ -87,7 +87,7 @@ export default function IconButtonUI({ icon, iconColor, iconSize, iconLink, chil
 
   return (
     <div className={`flex ${isFullWidth ? 'w-full' : ''}`}>
-      <Link href={iconLink ?? '#'} className={`flex ${icon !== undefined ? 'cursor-pointer' : 'cursor-auto'} ${isFullWidth ? 'w-full' : ''}`} >
+      <Link href={iconLink ?? '#'} className={`flex ${icon !== undefined ? 'cursor-pointer' : 'cursor-auto'} ${isFullWidth ? 'w-full' : ''}`} target='_blank' >
         {
           icon !== undefined &&
           <div className={`border-2 border-r-0 ${getBorderColor(borderColor)}`}>

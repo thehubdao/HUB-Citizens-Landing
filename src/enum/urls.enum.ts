@@ -14,8 +14,10 @@ export enum ExternalLink {
 }
 
 export enum PageLocation {
-  Home ='/',
-  Resources = 'soon',
+  Home = '/',
+  Resources = 'https://docs.thehubdao.xyz/',
+  LuksoCitizens = 'https://universal.page/collections/lukso/0x754a5d007d5f1188ef0db892ee115a7c01b38fa3',
+  Portal = 'https://portal.thehubdao.xyz/lukso',
   Create = 'soon',
   Explore = 'soon'
 }

@@ -1,5 +1,7 @@
 export enum Menu {
   Resources = 'Resources',
   Create = 'Create',
-  Explore = 'Explore'
+  LuksoCitizens = 'Lukso Citizens',
+  Explore = 'Explore',
+  Portal = 'Citizens Portal'
 }

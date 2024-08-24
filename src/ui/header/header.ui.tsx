@@ -8,8 +8,8 @@ import { useState } from "react";
 
 const menuOptions = [
   { label: Menu.Resources, link: PageLocation.Resources },
-  { label: Menu.Create, link: PageLocation.Create },
-  { label: Menu.Explore, link: PageLocation.Explore }
+  { label: Menu.LuksoCitizens, link: PageLocation.LuksoCitizens },
+  { label: Menu.Portal, link: PageLocation.Portal }
 ];
 
 export default function HeaderUI() {
